@@ -1,3 +1,42 @@
+/* 1. FONT SIZE */
+/* 2. ROOTS */
+/* 3. GLOBAL STYLES */
+
+@font-face {
+  font-family: "Public Sans";
+  font-style: normal;
+  font-weight: 100;
+  font-display: swap;
+  src: url("../fonts/public-sans-v7-latin-100.woff2") format("woff2"),
+       url("../fonts/public-sans-v7-latin-100.woff") format("woff");
+}
+@font-face {
+  font-family: "Public Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("../fonts/public-sans-v7-latin-500.woff2") format("woff2"),
+       url("../fonts/public-sans-v7-latin-500.woff") format("woff");
+}
+@font-face {
+  font-family: "Public Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/public-sans-v7-latin-regular.woff2") format("woff2"),
+       url("../fonts/public-sans-v7-latin-regular.woff") format("woff");
+}
+
+:root {
+  --light-green: linear-gradient(135deg, #33D35E 0%, #2AB6D9 99.58%);
+  --green: #30C88F;
+  --dark-blue: #2D314D;
+  --dark-gray: #9597A5;
+  --light-gray: #F4F5F7;
+  --light-white: #F2F2F2;
+  --white: white;
+}
+
 html {
   box-sizing: border-box;
   scroll-behavior: smooth;
@@ -14,10 +53,10 @@ body {
   margin: 0;
   display: flex;
   flex-direction: column;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Public Sans", "Arial", sans-serif;
   font-size: 16px;
-  background-color: #fff;
-  color: #222;
+  line-height: 26px;
+  background-color: var(--light-white);
 }
 
 img {
