@@ -441,6 +441,10 @@ img {
   display: block;
 }
 
+.social-link__img:hover path {
+  fill: var(--green);
+}
+
 .site-footer__sitenav-list {
   padding: 0;
   margin: 0;
@@ -464,6 +468,11 @@ img {
   font-size: 15px;
   letter-spacing: -0.234375px;
   color: var(--white);
+}
+
+.site-footer__sitenav-link:active,
+.site-footer__sitenav-link:hover {
+  color: var(--green);
 }
 
 .site-footer__right-box {
