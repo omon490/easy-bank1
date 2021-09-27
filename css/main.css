@@ -60,6 +60,7 @@ body {
   line-height: 26px;
   margin-top: 80px;
   background-color: var(--light-white);
+  overflow-x: hidden;
 }
 
 img {
@@ -177,12 +178,11 @@ img {
 
 .intro {
   padding-top: 170px;
-  padding-bottom: 170px;
+  padding-bottom: 140px;
   background-image: url("/img/intro-bg-img.svg");
   background-repeat: no-repeat;
   background-position: calc(50% + 590px) calc(50% - 80px);
   background-size: 1371px 956px;
-  background-color: var(--light-gray);
   position: relative;
 }
 
@@ -220,4 +220,91 @@ img {
   position: absolute;
   top: -290px;
   right: -275px;
+}
+
+/* SERVICES */
+
+.services {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  background-color: var(--light-gray);
+}
+
+.services-heading {
+  margin: 0;
+  margin-bottom: 16px;
+  font-weight: 100;
+  font-size: 40px;
+  line-height: 64px;
+  letter-spacing: -0.714286px;
+}
+
+.services-text {
+  margin: 0;
+  margin-bottom: 72px;
+  width: 635px;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: -0.28125px;
+  color: var(--dark-gray);
+}
+
+.services-list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.services-item {
+  margin-right: 30px;
+}
+
+.services-item:last-child {
+  margin: 0;
+}
+
+.services-item__title {
+  margin: 0;
+  margin-bottom: 26px;
+  font-weight: 100;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: -0.428571px;
+  color: var(--dark-blue);
+}
+
+.services-item__title::before {
+  content: "";
+  display: block;
+  width: 72px;
+  height: 72px;
+  margin-bottom: 40px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+}
+
+.services-item:nth-child(1) .services-item__title::before {
+  background-image: url("/img/online-banking.svg");
+}
+
+.services-item:nth-child(2) .services-item__title::before {
+  background-image: url("/img/simple-budgeting.svg");
+}
+
+.services-item:nth-child(3) .services-item__title::before {
+  background-image: url("/img/fast-onboard.svg");
+}
+
+.services-item:nth-child(4) .services-item__title::before {
+  background-image: url("/img/open-api.svg");
+}
+
+.services-item__text {
+  margin: 0;
+  letter-spacing: -0.25px;
+  color: var(--dark-gray);
 }
